@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_del__storable_consumable_del__storable_consumable,del__storable_consumable.del__storable_consumable,model_del__storable_consumable_del__storable_consumable,base.group_user,1,1,1,1

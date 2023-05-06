@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="del__storable_consumable.list">
+      <field name="name">del__storable_consumable list</field>
+      <field name="model">del__storable_consumable.del__storable_consumable</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="del__storable_consumable.action_window">
+      <field name="name">del__storable_consumable window</field>
+      <field name="res_model">del__storable_consumable.del__storable_consumable</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="del__storable_consumable.action_server">
+      <field name="name">del__storable_consumable server</field>
+      <field name="model_id" ref="model_del__storable_consumable_del__storable_consumable"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="del__storable_consumable" id="del__storable_consumable.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="del__storable_consumable.menu_1" parent="del__storable_consumable.menu_root"/>
+    <menuitem name="Menu 2" id="del__storable_consumable.menu_2" parent="del__storable_consumable.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="del__storable_consumable.menu_1_list" parent="del__storable_consumable.menu_1"
+              action="del__storable_consumable.action_window"/>
+    <menuitem name="Server to list" id="del__storable_consumable" parent="del__storable_consumable.menu_2"
+              action="del__storable_consumable.action_server"/>
+-->
+  </data>
+</odoo>
